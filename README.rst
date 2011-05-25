@@ -88,3 +88,17 @@ a test::
     fileData.send(); // does nothing
 
 Be sure to assign the original class back when you're done testing.
+
+tests.hasClass($sel, cls)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Asserts that jQuery selector $sel has CSS class cls.
+
+Otherwise, an instructive error is raised.
+
+tests.lacksClass($sel, cls)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Asserts that jQuery selector $sel does not have CSS class cls.
+
+Otherwise, an instructive error is raised.
